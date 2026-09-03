@@ -5,7 +5,6 @@ public class SweetFlight {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Arrays para armazenamento dos dados
         int[] numeroAvioes = new int[4];
         int[] assentosAvioes = new int[4];
         String[] nomePassageiros = new String[20];
