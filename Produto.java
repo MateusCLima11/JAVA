@@ -1,26 +1,36 @@
-import java.util.Scanner;
-import java.util.Locale;
-
 public class Produto {
-    public static void main(String[] args) {
+    private String nome;
+    private float preco;
+    private int quantidade;
 
-        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
+public Produto(String nome, float preco, int quantidade){
+    this.nome=nome;
+    this.preco=preco;
+    this.quantidade=quantidade;
+}
 
-        System.out.print("Digite o nome do produto: ");
-        String nomeProduto = scanner.nextLine();
+public String getNome(){
+    return nome;
+}
 
-        System.out.print("Digite a quantidade: ");
-        int quantidade = scanner.nextInt();
+public void setNome(String nome){
+    this.nome=nome;
+}
 
-        System.out.print("Digite o preço unitário: ");
-        double precoUnitario = scanner.nextDouble();
+public float getPreco(){
+    return preco;
+}
 
-        System.out.println();
+public void setPreco(float preco){
+    this.preco=preco;
+}
 
-        System.out.printf(Locale.US, "Produto: %s%n", nomeProduto);
-        System.out.printf(Locale.US, "Quantidade: %d%n", quantidade);
-        System.out.printf(Locale.US, "Preço unitário: R$ %.2f%n", precoUnitario);
+public int getQuantidade(){
+    return quantidade;
+}
 
-        scanner.close();
-    }
+public void setQuantidade(int quantidade){
+    this.quantidade=quantidade;
+}
+
 }
