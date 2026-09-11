@@ -29,9 +29,9 @@ public class VeiculoApp {
                     int ano = sc.nextInt();
 
                     System.out.println("informe a Cilindrada");
-                    float cilindrada = sc.nextFloat();
+                    int cilindrada = sc.nextInt();
 
-                    VeiculoMoto vm = new VeiculoMoto(marca, ano, cilindrada);
+                    Moto vm = new Moto(marca, ano, cilindrada);
                     System.out.println("\n--- Dados da moto cadastrada ---");
                     vm.exibirDados();
                     break;
@@ -47,7 +47,7 @@ public class VeiculoApp {
                     System.out.println("Informe a quantidade de portas");
                     int qntportas = sc.nextInt();
 
-                    VeiculoCarro vc = new VeiculoCarro(marca, ano, qntportas);
+                    Carro vc = new Carro(marca, ano, qntportas);
                     System.out.println("\n--- Dados do carro cadastrado ---");
                     vc.exibirDados();
                     break;
