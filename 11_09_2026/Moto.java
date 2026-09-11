@@ -3,6 +3,7 @@ public class Moto extends Veiculo {
 
     public Moto(String marca, int ano, int cilindrada){
         super(marca, ano);
+        this.cilindrada = cilindrada;
     }
 
     public int getCilindrada(){

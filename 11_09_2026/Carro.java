@@ -3,6 +3,7 @@ public class Carro extends Veiculo{
 
     public Carro(String marca, int ano, int qtdportas){
         super(marca, ano);
+        this.qtdportas = qtdportas;
     }
 
     public int getQtdportas(){
