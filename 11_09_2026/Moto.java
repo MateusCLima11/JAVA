@@ -1,7 +1,7 @@
 public class Moto extends Veiculo {
     private int cilindrada;
 
-    public Moto(String marca, int ano. int cilindrada){
+    public Moto(String marca, int ano, int cilindrada){
         super(marca, ano);
     }
 
