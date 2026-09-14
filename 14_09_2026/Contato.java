@@ -1,16 +1,16 @@
 public class Contato {
 
-    // Atributos privados declarados no escopo da classe
+    // Atributos privados (Encapsulamento)
     private String nome;
     private String numero;
 
-    // Construtor para inicializar o objeto
+    // Construtor
     public Contato(String nome, String numero) {
         this.nome = nome;
         this.numero = numero;
     }
 
-    // Getters e Setters para o atributo 'nome'
+    // Getters e Setters
     public String getNome() {
         return nome;
     }
@@ -19,7 +19,6 @@ public class Contato {
         this.nome = nome;
     }
 
-    // Getters e Setters para o atributo 'numero' (faltavam no código original)
     public String getNumero() {
         return numero;
     }
@@ -28,9 +27,8 @@ public class Contato {
         this.numero = numero;
     }
 
-    // Método utilitário para exibir os dados do contato
-    @Override
-    public String toString() {
-        return "Nome: " + nome + " | Telefone: " + numero;
+    // Método que será sobrescrito pelas subclasses (Polimorfismo)
+    public String exibirDados() {
+        return "Nome: " + nome + "\nTelefone: " + numero;
     }
 }
