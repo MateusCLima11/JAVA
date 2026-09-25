@@ -1,3 +1,4 @@
+package AtividadeProduto;
 public class ProdutoFisico extends Produto {
     private double frete;
 

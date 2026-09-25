@@ -1,3 +1,4 @@
+package AtividadeProduto;
 public abstract class Produto implements Venda {
     // encapsulamento
     private int codigo;

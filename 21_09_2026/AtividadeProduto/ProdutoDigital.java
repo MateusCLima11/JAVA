@@ -1,3 +1,4 @@
+package AtividadeProduto;
 public class ProdutoDigital extends Produto {
 
     public ProdutoDigital(int codigo, String nome, double preco) {
